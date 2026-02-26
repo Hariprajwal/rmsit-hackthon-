@@ -1,0 +1,35 @@
+
+> front@0.0.0 lint
+> eslint .
+
+
+D:\downloads\HACKTHON RMSIT\FRONT\src\components\AnalyticsCard.jsx
+  3:61  error  'Icon' is defined but never used  no-unused-vars
+
+D:\downloads\HACKTHON RMSIT\FRONT\src\pages\AccessControl.jsx
+  25:43  error  'useState' is not defined  no-undef
+  26:41  error  'useState' is not defined  no-undef
+
+D:\downloads\HACKTHON RMSIT\FRONT\src\pages\Appointments.jsx
+  64:45  error  'useState' is not defined  no-undef
+  65:45  error  'useState' is not defined  no-undef
+  66:39  error  'useState' is not defined  no-undef
+  67:35  error  'useState' is not defined  no-undef
+
+D:\downloads\HACKTHON RMSIT\FRONT\src\pages\Auth.jsx
+  13:35  error  'useState' is not defined  no-undef
+  14:45  error  'useState' is not defined  no-undef
+
+D:\downloads\HACKTHON RMSIT\FRONT\src\pages\DoctorProfile.jsx
+  211:7  error  'styles' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\downloads\HACKTHON RMSIT\FRONT\src\pages\HealthRecords.jsx
+  33:51  error  'useState' is not defined  no-undef
+  34:45  error  'useState' is not defined  no-undef
+  35:43  error  'useState' is not defined  no-undef
+
+D:\downloads\HACKTHON RMSIT\FRONT\src\pages\TechnicianDashboard.jsx
+  46:43  error  'idx' is defined but never used  no-unused-vars
+
+Γ£û 14 problems (14 errors, 0 warnings)
+

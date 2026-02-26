@@ -1,0 +1,15 @@
+
+> front@0.0.0 build
+> vite build
+
+[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32mΓ£ô[39m 98 modules transformed.
+Γ£ù Build failed in 3.54s
+error during build:
+Could not resolve "../assets/logo.png" from "src/pages/Auth.jsx"
+file: D:/downloads/HACKTHON RMSIT/FRONT/src/pages/Auth.jsx
+    at getRollupError (file:///D:/downloads/HACKTHON%20RMSIT/FRONT/node_modules/rollup/dist/es/shared/parseAst.js:402:41)
+    at error (file:///D:/downloads/HACKTHON%20RMSIT/FRONT/node_modules/rollup/dist/es/shared/parseAst.js:398:42)
+    at ModuleLoader.handleInvalidResolvedId (file:///D:/downloads/HACKTHON%20RMSIT/FRONT/node_modules/rollup/dist/es/shared/node-entry.js:21710:24)
+    at file:///D:/downloads/HACKTHON%20RMSIT/FRONT/node_modules/rollup/dist/es/shared/node-entry.js:21670:26

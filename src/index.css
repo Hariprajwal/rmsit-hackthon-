@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #f97316;
+  /* Medical Orange */
+  --color-primary-dark: #ea580c;
+  /* Deep Orange */
+  --color-primary-light: #fff7ed;
+  /* Orange tint */
+  --color-success: #10b981;
+  /* Emerald */
+  --color-alert: #ef4444;
+  /* Red */
+  --color-muted: #64748b;
+  /* Slate-500 */
+  --color-heading: #0f172a;
+  /* Slate-900 */
+}
+
+:root {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+/* ─── CARD / SURFACE styles — NO backdrop-filter for performance ─── */
+.card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.06);
+}
+
+/* Legacy glass class — now replaced with a simple white card */
+.glass {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+}
+
+/* ─── Shape helpers ─── */
+.pill-shape {
+  border-radius: 9999px;
+}
+
+/* ─── Orange glow (light, subtle) ─── */
+.glow-orange {
+  box-shadow: 0 0 16px rgba(249, 115, 22, 0.25);
+}
+
+/* Remove old blue glow — do NOT throw errors for existing uses */
+.glow-blue {
+  box-shadow: none;
+}
+
+/* ─── Sidebar highlight ─── */
+.nav-active {
+  background: #fff7ed;
+  color: #f97316;
+  border-left: 3px solid #f97316;
+}
+
+/* ─── Smooth page transitions (CSS only — no JS animation overhead) ─── */
+.page-enter {
+  animation: fadeUp 0.18s ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ─── Base resets ─── */
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: #0f172a;
+  }
+}
